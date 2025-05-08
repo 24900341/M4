@@ -137,13 +137,11 @@ int main() {
 
 
     printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);  // Using fgets to handle spaces in the input
-
+    fgets(str, sizeof(str), stdin);  
     
     for (int i = 0; str[i] != '\0'; i++) {
-        str[i] = tolower(str[i]); // Convert to lowercase
+        str[i] = tolower(str[i]); 
     }
-
 
     printf("Lowercase string: %s\n", str);
 
